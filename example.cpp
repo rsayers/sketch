@@ -1,10 +1,3 @@
-# sketch
-A simple library for coding graphics. Heavily influenced by Processing. In extremely early development.
-
-Written by a Pythonista just learning c++, i'm sure it shows.
-
-Example:
-```c++
 #include "sketch.h"
 
 class Example : public Sketch {
@@ -44,14 +37,3 @@ int main()
    Example ex (640, 480);
    ex.run();
 }
-```
-Which produces:
-![screenshot](/screenshot.png)
-
-Currently you can:
-* set(x, y, r, g, b) - Sets pixel
-* circle(x, y, radius, r, g, b) - Draw an empty circle
-* fcircle(x, y, radius, r, g, b) - Draw a filled circle
-* line(x1, y1, x2, y2, r, g, b) - Draws a line
-
-Do you setup in `setup()`, and do your drawing in `draw()` which will be called once per frame.
